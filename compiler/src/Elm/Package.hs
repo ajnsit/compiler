@@ -81,8 +81,9 @@ data Canonical =
 
 
 isKernel :: Name -> Bool
-isKernel (Name author _) =
-  author == elm || author == elm_explorations
+isKernel (Name _author _) =
+  -- author == elm || author == elm_explorations
+  True
 
 
 toChars :: Name -> String
